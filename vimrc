@@ -15,7 +15,7 @@ nnoremap ,cd :cd %:p:h<CR>
 autocmd InsertEnter,InsertLeave * set cul!
 
 " Open every buffer in its own tabpage
-" :au BufAdd,BufNewFile * nested tab sball
+:au BufAdd,BufNewFile * nested tab sball
 
 " ctrlp.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim

@@ -153,7 +153,7 @@ inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
 " Easy access to edit vimrc 
-nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
+" nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
 
 " Run make on the current file
 autocmd FileType python set makeprg=python\ %

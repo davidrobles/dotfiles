@@ -27,6 +27,10 @@ nnoremap * *``
 " Disable the beep
 set vb
 
+" Move tabs to left and right
+nnoremap <Leader>z :tabmove -1<cr>
+nnoremap <Leader>x :tabmove +1<cr>
+
 " Number of pixel lines inserted between characters
 set linespace=3
 

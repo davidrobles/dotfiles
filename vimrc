@@ -92,7 +92,7 @@ nmap ,d :b#<bar>bd#<CR>
 
 if has("autocmd")
   filetype on
-  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noet
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4
   autocmd FileType html setlocal shiftwidth=4 tabstop=4
 endif
 

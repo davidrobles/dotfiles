@@ -146,6 +146,7 @@ if has('gui_running')
 " Terminal
 else
     set background=dark
+    " colorscheme solarized
     colorscheme solarized
 endif
 
@@ -178,7 +179,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 " Automatically Execute ctags Each Time a File is Saved
 " :autocmd BufWritePost * call system("/usr/local/bin/ctags -R")
 
-map ,q magqap`a
+" map ,q magqap`a
 set textwidth=100
 
 " bind K to grep word under cursor

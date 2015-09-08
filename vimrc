@@ -180,7 +180,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 " :autocmd BufWritePost * call system("/usr/local/bin/ctags -R")
 
 " map ,q magqap`a
-set textwidth=100
+set textwidth=120
 
 " bind K to grep word under cursor
 " noremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>

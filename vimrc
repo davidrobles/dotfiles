@@ -1,4 +1,12 @@
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-fugitive'
+Plug 'altercation/vim-colors-solarized'
+Plug 'rking/ag.vim'
+Plug 'yssl/QFEnter'
+Plug 'kien/ctrlp.vim'
+
+call plug#end()
 
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
@@ -14,11 +22,19 @@ nnoremap ,cd :cd %:p:h<CR>
 
 autocmd InsertEnter,InsertLeave * set cul!
 
-" Open every buffer in its own tabpage
-" au BufAdd,BufNewFile * nested tab sball
+let g:qfenter_hopen_map = ['<C-CR>', '<C-s>', '<C-x>']
 
-" ctrlp.vim
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" If we have The Silver Searcher
+if executable('ag')
+    " Use ag over grep
+    set grepprg=ag\ --nogroup\ --nocolor
+
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+    let g:ctrlp_user_command = 'ag %s --files-with-matches -g "" --hidden --ignore "\.git$\|\.hg$\|\.svn|\.pyc$"'
+
+    " ag is fast enough that CtrlP doesn't need to cache
+    let g:ctrlp_use_caching = 0
+endif
 
 " Search and highlight but do not jump
 " NOTE it adds a jump in the jump list

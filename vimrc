@@ -168,8 +168,9 @@ else
     " let g:solarized_contrast = "high"
     " let g:solarized_termcolors=256
     " colorscheme solarized
-    syntax enable
-    colorscheme monokai
+    " syntax enable
+    " :set term=xterm-256color
+    colorscheme wombat256mod
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

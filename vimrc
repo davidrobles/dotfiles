@@ -156,17 +156,21 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " Status line
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
-" " Macvim
-" if has('gui_running')
-"     colorscheme solarized
-"     set background=dark
-"     set guioptions-=T " Remove the toolbar in macvim
-" " Terminal
-" else
-"     set background=dark
-"     " colorscheme solarized
-"     colorscheme solarized
-" endif
+" Macvim
+if has('gui_running')
+    colorscheme solarized
+    set background=dark
+    set guioptions-=T " Remove the toolbar in macvim
+" Terminal
+else
+    " set background=dark
+    " let g:solarized_visibility = "high"
+    " let g:solarized_contrast = "high"
+    " let g:solarized_termcolors=256
+    " colorscheme solarized
+    syntax enable
+    colorscheme monokai
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY

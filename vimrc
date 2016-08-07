@@ -1,10 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-fugitive'
 Plug 'altercation/vim-colors-solarized'
-Plug 'rking/ag.vim'
-Plug 'yssl/QFEnter'
 Plug 'kien/ctrlp.vim'
+Plug 'rking/ag.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'yssl/QFEnter'
 
 call plug#end()
 
@@ -154,17 +156,17 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " Status line
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
-" Macvim
-if has('gui_running')
-    colorscheme solarized
-    set background=dark
-    set guioptions-=T " Remove the toolbar in macvim
-" Terminal
-else
-    set background=dark
-    " colorscheme solarized
-    colorscheme solarized
-endif
+" " Macvim
+" if has('gui_running')
+"     colorscheme solarized
+"     set background=dark
+"     set guioptions-=T " Remove the toolbar in macvim
+" " Terminal
+" else
+"     set background=dark
+"     " colorscheme solarized
+"     colorscheme solarized
+" endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY

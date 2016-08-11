@@ -170,7 +170,8 @@ else
     " colorscheme solarized
     " syntax enable
     " :set term=xterm-256color
-    colorscheme wombat256mod
+    " colorscheme wombat256mod
+    colorscheme badwolf
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

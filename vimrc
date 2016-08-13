@@ -192,10 +192,6 @@ inoremap <s-tab> <c-n>
 " Easy access to edit vimrc 
 nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
 
-" Run make on the current file
-autocmd FileType python set makeprg=python\ %
-autocmd FileType ruby set makeprg=/Users/drobles/.rvm/bin/ruby\ %
-
 " Change the cursor in insert mode
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
@@ -208,4 +204,3 @@ set textwidth=120
 
 " bind K to grep word under cursor
 " noremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-

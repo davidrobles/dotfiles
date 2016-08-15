@@ -196,11 +196,5 @@ nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
-" Automatically Execute ctags Each Time a File is Saved
-" :autocmd BufWritePost * call system("/usr/local/bin/ctags -R")
-
 " map ,q magqap`a
 set textwidth=120
-
-" bind K to grep word under cursor
-" noremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>

@@ -15,3 +15,12 @@ https://github.com/junegunn/vim-plug
 :PlugInstall
 ```
 
+## Download Oh My Zsh
+
+https://github.com/robbyrussell/oh-my-zsh
+
+## Change default shell to zsh
+
+```
+sudo chsh -s /bin/zsh drobles
+```

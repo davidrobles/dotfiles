@@ -16,9 +16,7 @@ ln -s dotfiles/vimrc ~/.vimrc
 ln -s dotfiles/zshrc ~/.zshrc
 ```
 
-### vim-plug
-
-Install vim-plug
+### Install vim-plug
 
 https://github.com/junegunn/vim-plug
 

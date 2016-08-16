@@ -83,3 +83,7 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.zshrc-hearsay ]; then
     source ~/.zshrc-hearsay
 fi
+
+if [ -f ~/.zshrc-mac ]; then
+    source ~/.zshrc-mac
+fi

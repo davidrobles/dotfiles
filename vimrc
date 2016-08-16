@@ -196,6 +196,3 @@ nnoremap <silent> <Leader>ez :tabnew<CR>:e ~/.zshrc<CR>
 " Change the cursor in insert mode
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-
-" map ,q magqap`a
-set textwidth=120

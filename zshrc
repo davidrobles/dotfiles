@@ -82,8 +82,13 @@ source $ZSH/oh-my-zsh.sh
 alias dotfiles='cd ~/dotfiles'
 
 # Load computer specific zshrc files
+#
 if [ -f ~/dotfiles-hearsay/zshrc ]; then
     source ~/dotfiles-hearsay/zshrc
+fi
+
+if [ -f ~/dotfiles-hearsay-mac/zshrc ]; then
+    source ~/dotfiles-hearsay-mac/zshrc
 fi
 
 if [ -f ~/dotfiles-mac/zshrc ]; then

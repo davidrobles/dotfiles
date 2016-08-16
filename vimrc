@@ -188,6 +188,7 @@ inoremap <s-tab> <c-n>
 
 " Easy access to edit config files
 nnoremap <silent> <Leader>eh :tabnew<CR>:e ~/dotfiles-hearsay/zshrc<CR>
+nnoremap <silent> <Leader>eo :tabnew<CR>:e ~/dotfiles-hearsay-mac/zshrc<CR>
 nnoremap <silent> <Leader>em :tabnew<CR>:e ~/dotfiles-mac/zshrc<CR>
 nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
 nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>

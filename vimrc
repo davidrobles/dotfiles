@@ -142,9 +142,6 @@ map <Leader>a :tabprevious<Return>
 " Changes to the directory of the current file and runs it
 map <Leader>r :make <Return>
 
-" Insert a hash rocket with <c-l>
-imap <c-l> <space>=><space>
-
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 

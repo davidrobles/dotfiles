@@ -85,5 +85,5 @@ if [ -f ~/.zshrc-hearsay ]; then
 fi
 
 if [ -f ~/.zshrc-mac ]; then
-    source ~/.zshrc-mac
+    source ~/dotfiles-mac/zshrc
 fi

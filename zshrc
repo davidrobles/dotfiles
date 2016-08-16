@@ -84,6 +84,6 @@ if [ -f ~/.zshrc-hearsay ]; then
     source ~/.zshrc-hearsay
 fi
 
-if [ -f ~/.zshrc-mac ]; then
+if [ -f ~/dotfiles-mac/zshrc ]; then
     source ~/dotfiles-mac/zshrc
 fi

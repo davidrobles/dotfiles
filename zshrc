@@ -79,7 +79,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias dotfiles='~/dotfiles'
+alias dotfiles='cd ~/dotfiles'
 
 # Load computer specific zshrc files
 if [ -f ~/dotfiles-hearsay/zshrc ]; then

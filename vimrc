@@ -189,11 +189,10 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
-" Easy access to edit vimrc 
-nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
-
-" Easy access to edit tmux.conf
+" Easy access to edit config files
 nnoremap <silent> <Leader>et :tabnew<CR>:e ~/.tmux.conf<CR>
+nnoremap <silent> <Leader>ev :tabnew<CR>:e ~/.vimrc<CR>
+nnoremap <silent> <Leader>ez :tabnew<CR>:e ~/.zshrc<CR>
 
 " Change the cursor in insert mode
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"

@@ -1,5 +1,12 @@
 #Dotfiles - Base
 
+### Clone repository
+
+```
+cd ~/
+git clone git@github.com:davidrobles/dotfiles.git
+```
+
 ### Create symbolic links
 
 ```

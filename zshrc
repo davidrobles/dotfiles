@@ -87,3 +87,7 @@ fi
 if [ -f ~/dotfiles-mac/zshrc ]; then
     source ~/dotfiles-mac/zshrc
 fi
+
+if [ -f ~/dotfiles-digital-ocean/zshrc ]; then
+    source ~/dotfiles-digital-ocean/zshrc
+fi

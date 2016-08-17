@@ -3,7 +3,7 @@
 ### Clone repository
 
 ```
-cd ~/
+cd ~
 git clone git@github.com:davidrobles/dotfiles.git
 ```
 

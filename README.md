@@ -37,3 +37,4 @@ chsh -s `which zsh`
 ```
 
 Restart
+# zs-tmux

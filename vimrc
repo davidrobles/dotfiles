@@ -197,3 +197,9 @@ nnoremap <silent> <Leader>ez :tabnew<CR>:e ~/.zshrc<CR>
 " Change the cursor in insert mode
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+" Add pdb breakpoint
+nnoremap <silent> <Leader>pdb :normal Oimport pdb; pdb.set_trace()<ESC>!
+
+" Add wdb breakpoint
+nnoremap <silent> <Leader>wdb :normal Oimport wdb; wdb.set_trace()<ESC>!

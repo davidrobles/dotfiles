@@ -8,6 +8,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'yssl/QFEnter'
 Plug 'derekwyatt/vim-scala'
+Plug 'tmux-plugins/vim-tmux'
 
 call plug#end()
 

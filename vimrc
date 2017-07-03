@@ -7,6 +7,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'yssl/QFEnter'
+Plug 'derekwyatt/vim-scala'
 
 call plug#end()
 

@@ -162,7 +162,7 @@ if has('gui_running')
     set guioptions-=T " Remove the toolbar in macvim
 " Terminal
 else
-    " set background=dark
+    set background=dark
     " let g:solarized_visibility = "high"
     " let g:solarized_contrast = "high"
     " let g:solarized_termcolors=256
@@ -170,7 +170,7 @@ else
     " syntax enable
     " :set term=xterm-256color
     " colorscheme wombat256mod
-    colorscheme badwolf
+    " colorscheme badwolf
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

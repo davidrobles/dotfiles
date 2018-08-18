@@ -1,14 +1,15 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
+Plug 'derekwyatt/vim-scala'
 Plug 'kien/ctrlp.vim'
+Plug 'morhetz/gruvbox'
 Plug 'rking/ag.vim'
+Plug 'tmux-plugins/vim-tmux'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'yssl/QFEnter'
-Plug 'derekwyatt/vim-scala'
-Plug 'tmux-plugins/vim-tmux'
 
 call plug#end()
 
@@ -155,23 +156,14 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " Status line
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 
-" Macvim
-if has('gui_running')
-    colorscheme solarized
-    set background=dark
-    set guioptions-=T " Remove the toolbar in macvim
-" Terminal
-else
-    set background=dark
-    " let g:solarized_visibility = "high"
-    " let g:solarized_contrast = "high"
-    " let g:solarized_termcolors=256
-    " colorscheme solarized
-    " syntax enable
-    " :set term=xterm-256color
-    " colorscheme wombat256mod
-    " colorscheme badwolf
-endif
+" Solarized Color scheme
+" syntax enable
+" set background=dark
+" let g:solarized_termcolors=1 " This gets rid of the grey background
+" colorscheme solarized
+
+" gruvbox color scheme
+colorscheme gruvbox
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
@@ -205,3 +197,7 @@ nnoremap <silent> <Leader>pdb :normal Oimport pdb; pdb.set_trace()<ESC>!
 
 " Add wdb breakpoint
 nnoremap <silent> <Leader>wdb :normal Oimport wdb; wdb.set_trace()<ESC>!
+
+" Latex stuff
+" map ,q magqap`a
+" set textwidth=100

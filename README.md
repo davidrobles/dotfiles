@@ -1,4 +1,4 @@
-#Dotfiles - Base
+# Dotfiles
 
 ### Clone repository
 
@@ -36,5 +36,4 @@ https://github.com/robbyrussell/oh-my-zsh
 chsh -s `which zsh`
 ```
 
-Restart
-# zs-tmux
+### Restart

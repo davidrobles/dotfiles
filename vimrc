@@ -1,7 +1,5 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'altercation/vim-colors-solarized'
-Plug 'derekwyatt/vim-scala'
 Plug 'kien/ctrlp.vim'
 Plug 'morhetz/gruvbox'
 Plug 'rking/ag.vim'
